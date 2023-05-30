@@ -1,0 +1,11 @@
+kind: Endpoints
+apiVersion: v1
+metadata:
+ name: APP_NAME
+subsets:
+- addresses:
+  - ip: IP_ADDRESS
+  ports:
+  - name: PORT_NAME
+    port: HTTP_PORT
+    protocol: TCP

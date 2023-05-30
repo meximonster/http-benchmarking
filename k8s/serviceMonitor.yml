@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    k8s-app: APP_NAME
+  name: APP_NAME
+  namespace: NAMESPACE_NAME
+spec:
+  endpoints:
+  - interval: 30s
+    path: /metrics
+    port: PORT_NAME
+  namespaceSelector:
+    matchNames:
+    - NAMESPACE_NAME
+  selector:
+    matchLabels:
+      app: APP_NAME
