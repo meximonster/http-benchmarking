@@ -21,7 +21,7 @@ Configuration is loaded from an .env file at the root of the project. (example f
 | requests  | int     | # of requests                              | 3                     |
 | endpoint  | string  | request endpoint url                       | [https://www.google.gr](https://www.google.gr) |
 | client_timeout | int | http client request timeout in seconds    | 10                    |
-| method    | sstring | http method                                | GET                   |
+| method    | string  | http method                                | GET                   |
 | frequency | string  | the frequency to repeat the check          | 10s                   |
 | buckets   | string  | comma separated latency metric buckets (ms)| 50,100,500,1000       |
 | verbose   | bool    | verbosity                                  | false                 |
